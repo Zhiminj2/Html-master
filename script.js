@@ -43,29 +43,29 @@ function callAPI() {
                 const spanProperty = document.createElement("span");
                 spanProperty.style.fontSize = "55px !important";
                 spanProperty.style.color = "royalblue !important";
-
+                spanProperty.style.fontFamily = "system-ui";
                 spanProperty.textContent = property;
 
                 li.appendChild(spanProperty);
                 
                 if (j==0){
-                    li.textContent += " "+house.city;
+                    li.textContent += ": "+house.city;
                 }
 
                 else if (j==1){
-                    li.textContent += " "+house.streetAddress;
+                    li.textContent += ": "+house.streetAddress;
                 }
 
                 else if (j==2){
-                    li.textContent += " "+house.bedrooms;
+                    li.textContent += ": "+house.bedrooms;
                 }
 
                 else if (j==3){
-                    li.textContent += " "+house.bathrooms;
+                    li.textContent += ": "+house.bathrooms;
                 }
 
                 else {
-                    li.textContent += " $"+house.price;
+                    li.textContent += ": $"+house.price;
                 }
                 
 
